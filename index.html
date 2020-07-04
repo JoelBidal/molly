@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molly</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+        <nav>
+            <div class="menu">
+                <img src="imagenes/svg/menu.png">
+            </div>
+            <div class="titulo">
+                <a href="index.html">molly</a>
+            </div>
+            <div class="buscar">
+                <img src="imagenes/svg/search.svg">
+            </div>
+        </nav>
+
+        <!-- Titulo principal de imagenes -->
+        <div class="titulo-imagen">
+            <h1>Design adds value faster than it adds costs.</h1>
+        </div>
+
+        <!-- Previsualización de imagenes -->
+        <div class="contenedor-prev">
+            <div class="textos-prev">
+                <h4 onclick="adelante();">UP NEXT</h4>
+                <h1>Spring Summer</h1>
+                <img onclick="adelante();" src="imagenes/svg/right.svg">
+            </div>
+            <div class="prev-image">
+                <img id="next-image-1" src="imagenes/prev-image-3.jpg">
+                <img id="next-image-2" src="imagenes/prev-image-2.jpg">
+            </div>
+        </div>
+
+        <!-- Background -->
+        <div id="background-1">
+            <img id="main-image" src="imagenes/background-1.jpg">
+        </div>
+        <div id="background-2">
+            <img id="main-image-2" src="imagenes/background-3.jpg">
+        </div>
+        <div id="background-3">
+            <img id="main-image-3" src="imagenes/background-2.jpg">
+        </div>
+
+
+        <!-- Footer -->
+        <footer>
+           <a class="read" href="#">read more</a>
+           <a class="follow" href="#">follow us</a>
+            <div class="lineas">
+                <span>01</span>
+                    <img id="line-1" src="imagenes/svg/line.svg">
+                    <img id="line-2" src="imagenes/svg/line.svg">
+                    <img id="line-3" src="imagenes/svg/line.svg">
+                <span>03</span>
+                <div class="next-prev">
+                    <img onclick="atras();" src="imagenes/svg/left.svg">
+                    <img onclick="adelante();"src="imagenes/svg/right.svg">
+                </div> 
+            </div>
+        </footer> 
+        <!-- Javascript -->
+        <script src="js/main.js"></script>
+</body>
+</html>
