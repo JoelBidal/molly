@@ -1,26 +1,3 @@
-// function aparecer(){
-//     document.getElementById('background-1').style.visibility='hidden';
-//     document.getElementById('background-2', 'main-image-2').style.visibility='visible';
-//     document.getElementById('main-image-2').style.display='block';
-
-//     document.getElementById('next-image-1').style.display='none';
-//     document.getElementById('next-image-2').style.display='block';
-    
-//     document.getElementById('line-2').style.opacity='100%';
-
-// }
-
-// function volver(){
-//     document.getElementById('line-2').style.opacity='40%';
-
-//     document.getElementById('background-1').style.visibility='visible';
-//     document.getElementById('background-2', 'main-image-2').style.visibility='hidden';
-//     document.getElementById('main-image-2').style.display='none';
-
-//     document.getElementById('next-image-1').style.display='block';
-//     document.getElementById('next-image-2').style.display='none';
-// }
-
 var state = 1;
 console.log(state); //SACAR
 function adelante(){
@@ -58,47 +35,76 @@ function atras(){
     }
 }
 
-function show1(){        
+function show1(){
+    // imagen principal
     document.getElementById('background-1').style.visibility='visible';
     document.getElementById('background-3').style.visibility='hidden';
     document.getElementById('background-2', 'main-image-2').style.visibility='hidden';
     document.getElementById('main-image-2').style.display='none';
-
+    // imagenes siguientes
     document.getElementById('next-image-1').style.display='block';
     document.getElementById('next-image-2').style.display='none';
     document.getElementById('next-image-3').style.display='none';    
+    //texto principal 
+    document.getElementById('titulo-imagen').style.visibility='visible';
+    document.getElementById('titulo-imagen-2').style.visibility='hidden';
+    document.getElementById('titulo-imagen-3').style.visibility='hidden'; 
+    //textos siguientes
+    document.getElementById('next-titulo').style.display='block'; 
+    document.getElementById('next-titulo-2').style.display='none'; 
+    document.getElementById('next-titulo-3').style.display='none';    
 
+    // lineas de avance
     document.getElementById('line-1').style.opacity='100%'; 
     document.getElementById('line-2').style.opacity='40%'; 
     document.getElementById('line-3').style.opacity='40%';
 }
 
 function show2(){
-        document.getElementById('background-1').style.visibility='hidden';
-        document.getElementById('background-3').style.visibility='hidden';
-        document.getElementById('background-2', 'main-image-2').style.visibility='visible';
-        document.getElementById('main-image-2').style.display='block';
-    
-        document.getElementById('next-image-1').style.display='none';
-        document.getElementById('next-image-2').style.display='block';
-        document.getElementById('next-image-3').style.display='none';   
-        
-        document.getElementById('line-2').style.opacity='100%'; 
-        document.getElementById('line-1').style.opacity='40%'; 
-        document.getElementById('line-3').style.opacity='40%';   
+    //imagen principal
+    document.getElementById('background-1').style.visibility='hidden';
+    document.getElementById('background-3').style.visibility='hidden';
+    document.getElementById('background-2', 'main-image-2').style.visibility='visible';
+    document.getElementById('main-image-2').style.display='block';
+    //imagenes siguientes
+    document.getElementById('next-image-1').style.display='none';
+    document.getElementById('next-image-2').style.display='block';
+    document.getElementById('next-image-3').style.display='none';
+    //texto principal 
+    document.getElementById('titulo-imagen').style.visibility='hidden';
+    document.getElementById('titulo-imagen-2').style.visibility='visible';
+    document.getElementById('titulo-imagen-3').style.visibility='hidden';   
+    //textos siguientes
+    document.getElementById('next-titulo').style.display='none'; 
+    document.getElementById('next-titulo-2').style.display='block'; 
+    document.getElementById('next-titulo-3').style.display='none';    
+    // lineas de avance
+    document.getElementById('line-2').style.opacity='100%'; 
+    document.getElementById('line-1').style.opacity='40%'; 
+    document.getElementById('line-3').style.opacity='40%';   
 }
 
 function show3(){
-        document.getElementById('background-2').style.visibility='hidden';
-        document.getElementById('background-1').style.visibility='hidden';
-        document.getElementById('background-3', 'main-image-3').style.visibility='visible';
-        document.getElementById('main-image-3').style.display='block';
+    // imagen principal
+    document.getElementById('background-2').style.visibility='hidden';
+    document.getElementById('background-1').style.visibility='hidden';
+    document.getElementById('background-3', 'main-image-3').style.visibility='visible';
+    document.getElementById('main-image-3').style.display='block';
+    // imagenes siguientes
+    document.getElementById('next-image-1').style.display='none';
+    document.getElementById('next-image-3').style.display='block';
+    document.getElementById('next-image-2').style.display='none';   
+    // texto principal
+    document.getElementById('titulo-imagen').style.visibility='hidden';
+    document.getElementById('titulo-imagen-2').style.visibility='hidden';
+    document.getElementById('titulo-imagen-3').style.visibility='visible';   
+    //textos siguientes
+    document.getElementById('next-titulo').style.display='none';
+    document.getElementById('next-titulo-2').style.display='none';
+    document.getElementById('next-titulo-3').style.display='block';   
 
-        document.getElementById('next-image-1').style.display='none';
-        document.getElementById('next-image-3').style.display='block';
-        document.getElementById('next-image-2').style.display='none';   
-    
-        document.getElementById('line-3').style.opacity='100%'; 
-        document.getElementById('line-2').style.opacity='40%'; 
-        document.getElementById('line-1').style.opacity='40%';
+    // lineas de avance
+    document.getElementById('line-3').style.opacity='100%'; 
+    document.getElementById('line-2').style.opacity='40%'; 
+    document.getElementById('line-1').style.opacity='40%';
 }

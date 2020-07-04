@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Molly</title>
+    <link rel="icon" type="image/png" href="imagenes/fav-icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Sarabun:100,200,200i,400,600,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -22,15 +24,23 @@
         </nav>
 
         <!-- Titulo principal de imagenes -->
-        <div class="titulo-imagen">
-            <h1>Design adds value faster than it adds costs.</h1>
+        <div id="titulo-imagen">
+            <h1>Design adds value faster than it adds costs</h1>
+        </div>
+        <div id="titulo-imagen-2">
+            <h1>Summer treads on heels of spring</h1>
+        </div>
+        <div id="titulo-imagen-3">
+            <h1>Black and White makes everything better</h1>
         </div>
 
         <!-- Previsualización de imagenes -->
         <div class="contenedor-prev">
             <div class="textos-prev">
                 <h4 onclick="adelante();">UP NEXT</h4>
-                <h1>Spring Summer</h1>
+                <h1 id="next-titulo">Spring Summer</h1>
+                <h1 id="next-titulo-2">Black and White</h1>
+                <h1 id="next-titulo-3">Design Value</h1>
                 <img onclick="adelante();" src="imagenes/svg/right.svg">
             </div>
             <div class="prev-image">
@@ -55,7 +65,7 @@
         <!-- Footer -->
         <footer>
            <a class="read" href="#">read more</a>
-           <a class="follow" href="#">follow us</a>
+           <a class="follow" target="_blank" href="https://www.linkedin.com/in/joel-bidal-55852711b/">follow us</a>
             <div class="lineas">
                 <span>01</span>
                     <img id="line-1" onclick="show1();" src="imagenes/svg/line.svg">
