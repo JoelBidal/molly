@@ -156,6 +156,7 @@ nav .buscar img{
 #main-image-2, #main-image-3{
     max-width: 100%;
     height: auto;
+    /* opacity: 80%; */
     display: none;
 }
 
