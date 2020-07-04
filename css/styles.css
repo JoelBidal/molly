@@ -276,3 +276,129 @@ a:hover, a:focus {
 #line-2, #line-3{opacity: 40%;}
 
 .next-prev{margin-left: 50px;}
+
+
+/* Read More */
+
+section{
+    background-color:#fff;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+}
+
+.back-home img{
+    max-width: 60px;
+    height: auto;
+    margin-left: 50px;
+    animation-name: aparecerBack;
+    animation-duration: 2s;
+}
+@keyframes aparecerBack{
+    0% {opacity: 0};
+    100% {opacity: 1};
+}
+
+.read-more{
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.read-more img{
+    max-width: 100%;
+    height: auto;
+    animation-name: aparecerImg;
+    animation-duration: 0.7s;
+}
+@keyframes aparecerImg{
+    0% {opacity: 0};
+    100% {opacity: 1};
+}
+
+.read-more a{
+    text-decoration: none;
+    font-family: Sarabun;
+    font-size: 90px;
+    font-weight: 800;
+    line-height: 72px;
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+
+    width: 10%;
+    height: auto;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: aparecerLets;
+    animation-duration: 3s;
+}
+@keyframes aparecerLets{
+    0% {opacity: 0};
+    100% {opacity: 1};
+}
+
+.read-more a:hover{
+    -webkit-text-stroke: 0px transparent;
+    color: #fff;
+}
+
+.description{
+    width: 50%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+}
+
+.description div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.description h1{
+    width: 100%;
+    font-size: 45px;
+    font-family: Sarabun;
+    font-weight: 800;
+    color: #15ff00e0;
+    text-align: center;
+    margin-bottom: 13px;
+    animation-name: aparecerMolly;
+    animation-duration: 1.5s;
+}
+@keyframes aparecerMolly{
+    0% {opacity: 0};
+    100% {opacity: 1};
+}
+
+.description p{
+    width: 60%;
+    font-size: 20px;
+    font-family: Sarabun;
+    font-weight: 800;
+    color: #00000098;
+    animation-name: aparecerDescription;
+    animation-duration: 1.5s;
+}
+@keyframes aparecerDescription{
+    0% {opacity: 0};
+    100% {opacity: 1};
+}
+
+.description p a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Sarabun;
+    font-weight: 800;
+    color: #000000cb;
+}
