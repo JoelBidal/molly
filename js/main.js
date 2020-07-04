@@ -67,12 +67,15 @@ function show1(){
 }
 
 function show2(){
-        document.getElementById('line-2').style.opacity='40%';
+        document.getElementById('line-2').style.opacity='100%';
         
-        document.getElementById('background-1').style.visibility='visible';
+        document.getElementById('background-3').style.visibility='visible';
         document.getElementById('background-2', 'main-image-2').style.visibility='hidden';
         document.getElementById('main-image-2').style.display='none';
+        document.getElementById('main-image-3').style.display='block';
     
-        document.getElementById('next-image-1').style.display='block';
+        document.getElementById('next-image-3').style.display='block';
         document.getElementById('next-image-2').style.display='none';  
+
+        document.getElementById('line-3').style.opacity='100%';  
 }
