@@ -56,7 +56,8 @@ nav .buscar img{
     flex-wrap: wrap;
     width: 100%;
     background-color: #fff;
-    
+
+    overflow: hidden;
 }
 
 .textos-prev h4{
@@ -98,6 +99,20 @@ nav .buscar img{
     display: none;
 }
 
+/* Transiciones  next-titulo */
+#next-titulo,
+#next-titulo-2,
+#next-titulo-3{
+    animation-name: aparecerNextTitulos;
+    animation-duration: 1.5s;
+}
+    
+@keyframes aparecerNextTitulos{
+    0% {opacity:20%;}
+    100% {opacity: 100%;}
+}
+
+
 .textos-prev img{
     max-width: 40px;
     height: auto;
@@ -124,20 +139,6 @@ nav .buscar img{
     height: auto;
     display: none;
 }
-
-/* Transiciones Next-image */
-#next-image-1,
-#next-image-2,
-#next-image-3{
-    animation-name: aparecerNext;
-    animation-duration: 1.5s;
-    }
-    
-@keyframes aparecerNext{
-    0% {max-width: 110%;}
-    100% {max-width: 100%;}
-}
-
 
 /* Titulo principal de imagenes */
 #titulo-imagen{
@@ -186,11 +187,11 @@ nav .buscar img{
 #titulo-imagen-3 h1,
 #titulo-imagen-2 h1{
     animation-name: aparecerTitulos;
-    animation-duration: 1.5s;
+    animation-duration: 1.3s;
 }
     
 @keyframes aparecerTitulos{
-    0% {opacity:40%; margin-top: 100px;}
+    0% {opacity:40%; margin-top: 150px;}
     100% {opacity: 100%; margin-top: 0;}
 }
 
@@ -222,7 +223,6 @@ nav .buscar img{
     align-items: center;
     overflow: hidden;
 
-    visibility: hidden;
     position: absolute;
     top: 0;
     right: 0;
@@ -421,7 +421,7 @@ section{
 }
 
 .description p{
-    width: 60%;
+    width: 65%;
     font-size: 20px;
     font-family: Sarabun;
     font-weight: 800;
