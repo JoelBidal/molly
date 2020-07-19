@@ -36,6 +36,7 @@ function atras(){
 }
 
 function show1(){
+    state = 1;
     // imagen principal
     document.getElementById('background-1').style.visibility='visible';
     document.getElementById('background-3').style.visibility='hidden';
@@ -63,6 +64,7 @@ function show1(){
 }
 
 function show2(){
+    state = 2;
     //imagen principal
     document.getElementById('background-1').style.visibility='hidden';
     document.getElementById('background-3').style.visibility='hidden';
@@ -90,6 +92,7 @@ function show2(){
 }
 
 function show3(){
+    state = 3;
     // imagen principal
     document.getElementById('background-2').style.visibility='hidden';
     document.getElementById('background-1').style.visibility='hidden';
