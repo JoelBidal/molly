@@ -56,7 +56,8 @@ nav .buscar img{
     flex-wrap: wrap;
     width: 100%;
     background-color: #fff;
-    
+
+    overflow: hidden;
 }
 
 .textos-prev h4{
@@ -98,6 +99,20 @@ nav .buscar img{
     display: none;
 }
 
+/* Transiciones  next-titulo */
+#next-titulo,
+#next-titulo-2,
+#next-titulo-3{
+    animation-name: aparecerNextTitulos;
+    animation-duration: 1.5s;
+}
+    
+@keyframes aparecerNextTitulos{
+    0% {opacity:20%;}
+    100% {opacity: 100%;}
+}
+
+
 .textos-prev img{
     max-width: 40px;
     height: auto;
@@ -124,20 +139,6 @@ nav .buscar img{
     height: auto;
     display: none;
 }
-
-/* Transiciones Next-image */
-#next-image-1,
-#next-image-2,
-#next-image-3{
-    animation-name: aparecerNext;
-    animation-duration: 1.5s;
-    }
-    
-@keyframes aparecerNext{
-    0% {max-width: 110%;}
-    100% {max-width: 100%;}
-}
-
 
 /* Titulo principal de imagenes */
 #titulo-imagen{
@@ -186,11 +187,11 @@ nav .buscar img{
 #titulo-imagen-3 h1,
 #titulo-imagen-2 h1{
     animation-name: aparecerTitulos;
-    animation-duration: 1.5s;
+    animation-duration: 1.3s;
 }
     
 @keyframes aparecerTitulos{
-    0% {opacity:40%; margin-top: 100px;}
+    0% {opacity:40%; margin-top: 150px;}
     100% {opacity: 100%; margin-top: 0;}
 }
 
@@ -222,7 +223,6 @@ nav .buscar img{
     align-items: center;
     overflow: hidden;
 
-    visibility: hidden;
     position: absolute;
     top: 0;
     right: 0;
@@ -421,7 +421,7 @@ section{
 }
 
 .description p{
-    width: 60%;
+    width: 65%;
     font-size: 20px;
     font-family: Sarabun;
     font-weight: 800;
@@ -440,4 +440,178 @@ section{
     font-family: Sarabun;
     font-weight: 800;
     color: #000000cb;
+}
+
+/* RESPONSIVE */
+
+/* Mobile S */
+@media screen and (max-width: 320px){
+    nav .menu img{margin-left: 20px;}
+    nav .buscar img{margin-right: 20px;}
+
+    #titulo-imagen,
+    #titulo-imagen-2,
+    #titulo-imagen-3{width: 80%; margin-left: 25px;}
+    #titulo-imagen h1,
+    #titulo-imagen-2 h1,
+    #titulo-imagen-3 h1{font-size: 30px;}
+
+    #background-1 #main-image{max-width: initial; height: 100vh;}
+    #main-image-2,
+    #main-image-3 {max-width: initial; height: 100vh;}
+    @keyframes aparecerImagenes{
+        0% {opacity: 20%;}
+        100% {opacity: 90%;}
+        }
+
+    .contenedor-prev{display: none;}
+    footer .read{margin-left: 20px; width: 89px;}
+    footer .follow{margin-left: 0; width: 77px;}
+
+    footer span{display: none;}
+    .lineas{margin-right: 20px;}
+    .lineas img{margin: 0px 5px;}
+    .lineas #line-1, #line-2, #line-3  {display: none;}
+
+    .next-prev {margin-left: 10px; display: flex;}
+
+    /* Read more */
+    section{flex-wrap: wrap;}
+    .read-more{width: 100%;}
+    .back-home img{margin-left: 40px;}
+    .read-more img{max-width: initial; height: 100vh;}
+    .read-more a{font-size: 60px; line-height: 50px;}
+
+    .description{background: #fff; width: 100%;}
+    .description h1{margin-bottom: 25px;}
+    .description p{width: 80%;}
+}
+
+/* Mobile M */
+@media screen and (max-width: 375px){
+    nav .menu img{margin-left: 20px;}
+    nav .buscar img{margin-right: 20px;}
+
+    #titulo-imagen,
+    #titulo-imagen-2,
+    #titulo-imagen-3{width: 80%; margin-left: 25px; height: 20%;}
+    #titulo-imagen h1,
+    #titulo-imagen-2 h1,
+    #titulo-imagen-3 h1{font-size: 30px;}
+
+    #background-1 #main-image{max-width: initial; height: 100vh;}
+    #main-image-2,
+    #main-image-3 {max-width: initial; height: 100vh;}
+    @keyframes aparecerImagenes{
+        0% {opacity: 20%;}
+        100% {opacity: 90%;}
+        }
+
+    .contenedor-prev{display: none;}
+    footer .read{margin-left: 20px; width: 89px;}
+    footer .follow{margin-left: 0; width: 77px;}
+
+    footer span{display: none;}
+    .lineas{margin-right: 20px;}
+    .lineas img{margin: 0px 5px;}
+    .lineas #line-1, #line-2, #line-3  {display: none;}
+
+    .next-prev {margin-left: 10px; display: flex;}
+
+    /* Read more */
+    section{flex-wrap: wrap;}
+    .read-more{width: 100%;}
+    .back-home img{margin-left: 40px;}
+    .read-more img{max-width: initial; height: 100vh;}
+    .read-more a{font-size: 60px; line-height: 50px;}
+
+    .description{background: #fff; width: 100%;}
+    .description h1{margin-bottom: 25px;}
+    .description p{width: 80%;}
+}
+
+/* Mobile L */
+@media screen and (max-width: 425px){
+    nav .menu img{margin-left: 20px;}
+    nav .buscar img{margin-right: 20px;}
+
+    #titulo-imagen,
+    #titulo-imagen-2,
+    #titulo-imagen-3{width: 80%; margin-left: 25px; height: 20%;}
+    #titulo-imagen h1,
+    #titulo-imagen-2 h1,
+    #titulo-imagen-3 h1{font-size: 30px;}
+
+    #background-1 #main-image{max-width: initial; height: 100vh;}
+    #main-image-2,
+    #main-image-3 {max-width: initial; height: 100vh;}
+    @keyframes aparecerImagenes{
+        0% {opacity: 20%;}
+        100% {opacity: 90%;}
+        }
+
+    .contenedor-prev{display: none;}
+    footer .read{margin-left: 20px; width: 89px;}
+    footer .follow{margin-left: 0; width: 77px;}
+
+    footer span{display: none;}
+    .lineas{margin-right: 20px;}
+    .lineas img{margin: 0px 5px;}
+    .lineas #line-1, #line-2, #line-3  {display: none;}
+
+    .next-prev {margin-left: 10px; display: flex;}
+
+    /* Read more */
+    section{flex-wrap: wrap;}
+    .read-more{width: 100%;}
+    .back-home img{margin-left: 40px;}
+    .read-more img{max-width: initial; height: 110vh;}
+    .read-more a{font-size: 60px; line-height: 50px;}
+
+    .description{background: #fff; width: 100%;}
+    .description h1{margin-bottom: 25px;}
+    .description p{width: 80%;}
+}
+
+/* Tablet S */
+@media screen and (max-width: 500px){
+    nav .menu img{margin-left: 20px;}
+    nav .buscar img{margin-right: 20px;}
+
+    #titulo-imagen,
+    #titulo-imagen-2,
+    #titulo-imagen-3{width: 80%; margin-left: 25px; height: 20%;}
+    #titulo-imagen h1,
+    #titulo-imagen-2 h1,
+    #titulo-imagen-3 h1{font-size: 30px;}
+
+    #background-1 #main-image{max-width: initial; height: 100vh;}
+    #main-image-2,
+    #main-image-3 {max-width: initial; height: 100vh;}
+    @keyframes aparecerImagenes{
+        0% {opacity: 20%;}
+        100% {opacity: 90%;}
+        }
+
+    .contenedor-prev{display: none;}
+    footer .read{margin-left: 20px; width: 89px;}
+    footer .follow{margin-left: 0; width: 77px;}
+
+    footer span{display: none;}
+    .lineas{margin-right: 20px;}
+    .lineas img{margin: 0px 5px;}
+    .lineas #line-1, #line-2, #line-3  {display: none;}
+
+    .next-prev {margin-left: 10px; display: flex;}
+
+    /* Read more */
+    section{flex-wrap: wrap;}
+    .read-more{width: 100%;}
+    .back-home img{margin-left: 40px;}
+    .read-more img{max-width: initial; height: 125vh;}
+    .read-more a{font-size: 60px; line-height: 50px;}
+
+    .description{background: #fff; width: 100%;}
+    .description h1{margin-bottom: 25px;}
+    .description p{width: 80%;}
 }

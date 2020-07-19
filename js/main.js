@@ -38,18 +38,15 @@ function atras(){
 function show1(){
     state = 1;
     // imagen principal
-    document.getElementById('background-1').style.visibility='visible';
-    document.getElementById('background-3').style.visibility='hidden';
-    document.getElementById('background-2', 'main-image-2').style.visibility='hidden';
+    document.getElementById('background-1').style.display='flex';
+    document.getElementById('background-3').style.display='none';
+    document.getElementById('background-2', 'main-image-2').style.display='none';
     document.getElementById('main-image-2').style.display='none';
     // imagenes siguientes
     document.getElementById('next-image-1').style.display='block';
     document.getElementById('next-image-2').style.display='none';
     document.getElementById('next-image-3').style.display='none';    
     //texto principal 
-    // document.getElementById('titulo-imagen').style.visibility='visible';
-    // document.getElementById('titulo-imagen-2').style.visibility='hidden';
-    // document.getElementById('titulo-imagen-3').style.visibility='hidden'; 
     document.getElementById('titulo-imagen').style.display='block';
     document.getElementById('titulo-imagen-2').style.display='none';
     document.getElementById('titulo-imagen-3').style.display='none'; 
@@ -66,18 +63,15 @@ function show1(){
 function show2(){
     state = 2;
     //imagen principal
-    document.getElementById('background-1').style.visibility='hidden';
-    document.getElementById('background-3').style.visibility='hidden';
-    document.getElementById('background-2', 'main-image-2').style.visibility='visible';
+    document.getElementById('background-1').style.display='none';
+    document.getElementById('background-3').style.display='none';
+    document.getElementById('background-2', 'main-image-2').style.display='flex';
     document.getElementById('main-image-2').style.display='block';
     //imagenes siguientes
     document.getElementById('next-image-1').style.display='none';
     document.getElementById('next-image-2').style.display='block';
     document.getElementById('next-image-3').style.display='none';
     //texto principal 
-    // document.getElementById('titulo-imagen').style.visibility='hidden';
-    // document.getElementById('titulo-imagen-2').style.visibility='visible';
-    // document.getElementById('titulo-imagen-3').style.visibility='hidden';
     document.getElementById('titulo-imagen').style.display='none';
     document.getElementById('titulo-imagen-2').style.display='block';
     document.getElementById('titulo-imagen-3').style.display='none';  
@@ -94,18 +88,15 @@ function show2(){
 function show3(){
     state = 3;
     // imagen principal
-    document.getElementById('background-2').style.visibility='hidden';
-    document.getElementById('background-1').style.visibility='hidden';
-    document.getElementById('background-3', 'main-image-3').style.visibility='visible';
+    document.getElementById('background-2').style.display='none';
+    document.getElementById('background-1').style.display='none';
+    document.getElementById('background-3', 'main-image-3').style.display='flex';
     document.getElementById('main-image-3').style.display='block';
     // imagenes siguientes
     document.getElementById('next-image-1').style.display='none';
     document.getElementById('next-image-3').style.display='block';
     document.getElementById('next-image-2').style.display='none';   
     // texto principal
-    // document.getElementById('titulo-imagen').style.visibility='hidden';
-    // document.getElementById('titulo-imagen-2').style.visibility='hidden';
-    // document.getElementById('titulo-imagen-3').style.visibility='visible';
     document.getElementById('titulo-imagen').style.display='none';
     document.getElementById('titulo-imagen-2').style.display='none';
     document.getElementById('titulo-imagen-3').style.display='block';    
